@@ -19,7 +19,15 @@ const rmvWeather =  'GET_WEATHERS_DATA/rmvWeather'
 const weathersReducer = (state = initialState, action) => {
   switch (action.type) {
     case getwEATHER:
-      return { ...state, weathers: action.response.data };
+      return { ...state, weathers: { 
+      name:action.response.data.name,
+      windSpeed:action.response.data.wind.speed,
+      TimeZone:action.response.data.timezone,
+      Visibility:action.response.data.visibility,
+      pressure:action.response.data.main.pressure,
+      humidity:action.response.data.main.humidity,
+      description:action.response.data.weather['0'].description,
+      } };
     case rmvWeather:
       return { ...state, weathers: action.error };
     default:
