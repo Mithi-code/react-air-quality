@@ -1,27 +1,24 @@
-import { Details } from './Components/Details';
+import  Details  from './Components/Details';
 import Home from './Components/Home';
-import Detail from './Redux/Detail';
-import { Homee } from './Redux/Homee';
-
+import { Route, Routes } from 'react-router';
+import './App.css';
 
 function App() {
   return (
     <>
       <header>
-        <h1>Air Quality Index</h1>
-        <ul className="list-none">
-          <li>
-           Home
-          </li>
-          <li>
-           Details
-          </li>
-        </ul>
+        <img src="https://img.icons8.com/material/64/000000/back--v1.png"/>
+        <div>
+      <img src="https://img.icons8.com/material/64/000000/microphone--v1.png"/>
+      <img src="https://img.icons8.com/ios-filled/64/000000/settings.png"/>
+      </div>
       </header>
-      <div className="App">
-       <Home />
-       <Details />
-       <Detail />
+      <div className='App'>
+        <h1>List Of Countries</h1>
+      <Routes>
+        <Route exact element={<Home />} path="/" />
+        <Route exact element={<Details />} path="/details" />
+      </Routes>
       </div>
     </>
   );

@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+h1 {
+  text-align: center;
+}
