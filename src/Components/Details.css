@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
-.weather-img{
+.weather-img {
   display: flex;
   align-items: center;
   width: 40%;
@@ -13,7 +13,6 @@
   padding: 30px;
   border-radius: 50px;
 }
-
 
 .weather-card {
   display: flex;
