@@ -11,7 +11,7 @@ const getweathersData = (id) => (dispatch) => {
   try {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${id}&appid=${apikey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${id}&appid=${apikey}`,
       )
       .then((response) => dispatch({ type: getwEATHER, response }));
   } catch (error) {

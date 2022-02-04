@@ -5,10 +5,10 @@ const initialState = {
 };
 
 const url = 'https://restcountries.com/v3.1/all';
-const restData =  'GET_COUNTRIES_DATA/RESTData';
+const restData = 'GET_COUNTRIES_DATA/RESTData';
 const cancelRestData = 'GET_COUNTRIES_DATA/cancelRestData';
 
- const getCountriesData = () => (dispatch) => {
+const getCountriesData = () => (dispatch) => {
   try {
     axios
       .get(url)
@@ -17,7 +17,6 @@ const cancelRestData = 'GET_COUNTRIES_DATA/cancelRestData';
     dispatch({ type: cancelRestData, error });
   }
 };
-
 
 const restcountriesReducer = (state = initialState, action) => {
   switch (action.type) {
