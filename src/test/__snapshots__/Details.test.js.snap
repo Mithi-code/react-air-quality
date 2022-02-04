@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPage tests should render 1`] = `
+<DocumentFragment>
+  <div
+    class="weather-container"
+  >
+    <h1>
+      Weather info of--
+    </h1>
+    <img
+      class="weather-img"
+      src="India"
+    />
+    <div
+      class="weather-card"
+    >
+      <div
+        class="weather-info"
+      >
+        <p>
+          <b>
+            Name:-
+          </b>
+           
+        </p>
+        <p>
+          <b>
+            Wind-Speed:-
+          </b>
+            KM/H
+        </p>
+        <p>
+          <b>
+            Timezone:-
+          </b>
+           
+        </p>
+        <p>
+          <b>
+            Weather-Forecast:-
+          </b>
+           
+        </p>
+        <p>
+          <b>
+            Pressure:-
+          </b>
+            atm
+        </p>
+        <p>
+          <b>
+            humidity:-
+          </b>
+           %
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

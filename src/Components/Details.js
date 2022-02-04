@@ -12,6 +12,7 @@ export const Details = () => {
   useEffect(() => {
     dispatch(getweathersData(location.state.name));
   }, []);
+  // const flag = location.state.flag
   return (
     <div className="weather-container" >
       <h1>Weather info of--{data.name}</h1>
