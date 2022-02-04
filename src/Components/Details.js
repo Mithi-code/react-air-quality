@@ -17,8 +17,8 @@ export const Details = () => {
       <h1>Weather info of--{data.name}</h1>
       <img src={location.state.flag} className="weather-img"/>
       {data && (
-        <div className='weather-card'>
-          <div className='weather-info'>
+        <div className="weather-card">
+          <div className="weather-info">
             <p><b>Name:-</b> {data.name}</p>
             <p><b>Wind-Speed:-</b> {data.windSpeed} KM/H</p>
             <p><b>Timezone:-</b> {data.TimeZone}</p>

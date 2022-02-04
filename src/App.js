@@ -16,7 +16,7 @@ function App() {
       <img src="https://img.icons8.com/ios-filled/64/000000/settings.png"/>
       </div>
       </header>
-      <div className='App'>
+      <div className="App">
       <Routes>
         <Route exact element={<Home />} path="/" />
         <Route exact element={<Details />} path="/details/:name" />

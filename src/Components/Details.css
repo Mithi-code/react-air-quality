@@ -7,7 +7,7 @@
 .weather-img{
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 40%;
   margin: auto;
   height: 50vh;
   padding: 30px;
@@ -33,4 +33,5 @@
   width: 100%;
   border: 2px solid rgb(161, 46, 161);
   padding: 10px;
+  margin: 10px 0;
 }

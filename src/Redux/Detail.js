@@ -26,7 +26,7 @@ const weathersReducer = (state = initialState, action) => {
       Visibility:action.response.data.visibility,
       pressure:action.response.data.main.pressure,
       humidity:action.response.data.main.humidity,
-      description:action.response.data.weather['0'].description,
+      description:action.response.data.weather["0"].description,
       } };
     case rmvWeather:
       return { ...state, weathers: action.error };

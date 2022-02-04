@@ -2,8 +2,10 @@
 
 # React-Capstone.
 
-> This project is about to get air quality data of any places and other information.
+> This project is about to get weather information of any selected country and information of countries.
 
+![home-screenshoot](./list.png)
+![detial-screenshot](./info.png)
 
 ## Built With
 
@@ -11,6 +13,8 @@
 - CSS
 - JavaScript
 - React
+- Redux
+- Jest
 - Webpack
 - Git and GitHub
 
