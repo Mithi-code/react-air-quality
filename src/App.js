@@ -1,4 +1,4 @@
-import  Details  from './Components/Details';
+import Details from './Components/Details';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router';
 import './App.css';
