@@ -1,5 +1,6 @@
-/* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -30,7 +31,6 @@ export function Home() {
         {data
           .filter((f) => f.name.common.toLowerCase().includes(term.toLowerCase()))
           .map((e, i) => (
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events
             <div
               className="container"
               key={i}

@@ -20,6 +20,10 @@
 - Git and GitHub
 
 ## Deploy Link
+-Netlify (https://heuristic-williams-bd315f.netlify.app/)
+
+## Demo 
+- Video (https://www.loom.com/share/5f05b841531f4fb1b72b9db6e3f7c2c4)
 
 ## Getting Started
 
