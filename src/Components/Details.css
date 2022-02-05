@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-img {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  height: 50vh;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.weather-card {
+  display: flex;
+  font-size: large;
+  justify-content: center;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.weather-info p {
+  width: 100%;
+  border: 2px solid rgb(161, 46, 161);
+  padding: 10px;
+  margin: 10px 0;
+}
