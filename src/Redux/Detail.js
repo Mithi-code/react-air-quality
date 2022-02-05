@@ -18,8 +18,7 @@ const getweathersData = (id) => (dispatch) => {
     dispatch({ type: rmvWeather, error });
   }
 };
-// eslint-disable-next-line default-param-last
-const weathersReducer = (state = initialState, action) => {
+const weathersReducer = (action, state = initialState) => {
   switch (action.type) {
     case getwEATHER:
       return {

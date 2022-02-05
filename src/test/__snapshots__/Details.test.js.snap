@@ -9,6 +9,7 @@ exports[`DetailsPage tests should render 1`] = `
       Weather info of--
     </h1>
     <img
+      alt="flag"
       class="weather-img"
       src="India"
     />

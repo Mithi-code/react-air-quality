@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -33,10 +30,12 @@ export function Home() {
           .map((e, i) => (
             <div
               className="container"
+              // eslint-disable-next-line react/no-array-index-key
               key={i}
               onClick={() => {
                 handle(e.name.common, e.flags.png);
               }}
+              aria-hidden="true"
             >
               <img src={e.flags.png} className="img" alt="flag" />
               <p>

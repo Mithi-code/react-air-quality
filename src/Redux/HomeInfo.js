@@ -1,4 +1,3 @@
-/* eslint-disable default-param-last */
 import axios from 'axios';
 
 const initialState = {
@@ -19,7 +18,7 @@ const getCountriesData = () => (dispatch) => {
   }
 };
 
-const restcountriesReducer = (state = initialState, action) => {
+const restcountriesReducer = (action, state = initialState) => {
   switch (action.type) {
     case restData:
       return { ...state, countries: action.response.data };
