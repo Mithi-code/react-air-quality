@@ -17,8 +17,7 @@ const getCountriesData = () => (dispatch) => {
     dispatch({ type: cancelRestData, error });
   }
 };
-
-const restcountriesReducer = (action, state = initialState) => {
+const restcountriesReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case restData:
       return { ...state, countries: action.response.data };

@@ -27,11 +27,10 @@ export function Home() {
       <div className="alter">
         {data
           .filter((f) => f.name.common.toLowerCase().includes(term.toLowerCase()))
-          .map((e, i) => (
+          .map((e) => (
             <div
               className="container"
-              // eslint-disable-next-line react/no-array-index-key
-              key={i}
+              key={e.name.common}
               onClick={() => {
                 handle(e.name.common, e.flags.png);
               }}

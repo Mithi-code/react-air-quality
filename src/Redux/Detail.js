@@ -18,7 +18,8 @@ const getweathersData = (id) => (dispatch) => {
     dispatch({ type: rmvWeather, error });
   }
 };
-const weathersReducer = (action, state = initialState) => {
+
+const weathersReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case getwEATHER:
       return {

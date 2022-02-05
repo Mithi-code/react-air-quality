@@ -6,7 +6,7 @@ import { getweathersData } from '../Redux/Detail';
 
 export function Details() {
   const location = useLocation();
-  const data = useSelector((state) => state.weathersReducer.weathers);
+  const data = useSelector((state) => state.weathersReducer);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getweathersData(location.state.name));
@@ -15,7 +15,7 @@ export function Details() {
     <div className="weather-container">
       <h1>
         Weather info of--
-        {data.name}
+        {data.weathers.name}
       </h1>
       <img src={location.state.flag} className="weather-img" alt="flag" />
       {data && (
@@ -24,36 +24,36 @@ export function Details() {
             <p>
               <b>Name:-</b>
               {' '}
-              {data.name}
+              {data.weathers.name}
             </p>
             <p>
               <b>Wind-Speed:-</b>
               {' '}
-              {data.windSpeed}
+              {data.weathers.windSpeed}
               {' '}
               KM/H
             </p>
             <p>
               <b>Timezone:-</b>
               {' '}
-              {data.TimeZone}
+              {data.weathers.TimeZone}
             </p>
             <p>
               <b>Weather-Forecast:-</b>
               {' '}
-              {data.description}
+              {data.weathers.description}
             </p>
             <p>
               <b>Pressure:-</b>
               {' '}
-              {data.pressure}
+              {data.weathers.pressure}
               {' '}
               atm
             </p>
             <p>
               <b>humidity:-</b>
               {' '}
-              {data.humidity}
+              {data.weathers.humidity}
               %
             </p>
           </div>
