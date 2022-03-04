@@ -17,7 +17,6 @@
 - Redux
 - Jest
 - Webpack
-- Git and GitHub
 
 ## Deploy Link
 -Netlify (https://heuristic-williams-bd315f.netlify.app/)
