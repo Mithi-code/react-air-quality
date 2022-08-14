@@ -17,7 +17,7 @@ export function Home() {
   };
   return (
     <>
-      <h1>List Of Countries</h1>
+      <h1 className="italic">List Of Countries</h1>
       <input
         type="search"
         placeholder="Search Country name "

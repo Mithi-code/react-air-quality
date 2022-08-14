@@ -4,33 +4,55 @@
   box-sizing: border-box;
 }
 
+.weather-container {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 1.8rem;
+  box-shadow:20px 20px 20px rgba(0,0,0,.5);
+  border: 2px solid rgb(182, 41, 182);
+  background-color: black;
+}
+
 .weather-img {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 20rem;
   margin: auto;
-  height: 50vh;
-  padding: 30px;
-  border-radius: 50px;
+  height: 10rem;
 }
 
 .weather-card {
   display: flex;
   font-size: large;
   justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .weather-info {
+  background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .weather-info p {
-  width: 100%;
-  border: 2px solid rgb(161, 46, 161);
-  padding: 10px;
-  margin: 10px 0;
+  padding: 7px;
+  background-color: black;
+  color: #fff;
+}
+
+span {
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.weather-container h1 {
+  background-color: #000;
+  color: #fff;
+  margin: 15px;
 }

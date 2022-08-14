@@ -14,7 +14,6 @@ export function Details() {
   return (
     <div className="weather-container">
       <h1>
-        Weather info of--
         {data.weathers.name}
       </h1>
       <img src={location.state.flag} className="weather-img" alt="flag" />
@@ -22,36 +21,31 @@ export function Details() {
         <div className="weather-card">
           <div className="weather-info">
             <p>
-              <b>Name:-</b>
-              {' '}
-              {data.weathers.name}
-            </p>
-            <p>
-              <b>Wind-Speed:-</b>
+              <span>Wind-Speed : </span>
               {' '}
               {data.weathers.windSpeed}
               {' '}
               KM/H
             </p>
             <p>
-              <b>Timezone:-</b>
+              <span>Timezone : </span>
               {' '}
               {data.weathers.TimeZone}
             </p>
             <p>
-              <b>Weather-Forecast:-</b>
+              <span>Weather-Forecast : </span>
               {' '}
               {data.weathers.description}
             </p>
             <p>
-              <b>Pressure:-</b>
+              <span>Pressure : </span>
               {' '}
               {data.weathers.pressure}
               {' '}
               atm
             </p>
             <p>
-              <b>humidity:-</b>
+              <span>Humidity : </span>
               {' '}
               {data.weathers.humidity}
               %

@@ -2,25 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: antiquewhite;
+  background-color: #fff;
+  color: #000;
 }
 
-.alter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+.italic {
+  font-style: italic;
   margin: 20px;
 }
 
+.alter {
+  width: 100%;
+  display: grid;
+  margin: 20px;
+  gap: 40px;
+}
+
 input {
-  width: 98%;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
   outline: none;
   padding: 10px;
   border: 3px solid rgb(161, 46, 161);
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
-  margin: 20px;
 }
 
 .container {
@@ -29,17 +39,17 @@ input {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 300px;
-  height: 300px;
+  width: 20rem;
+  height: 20rem;
   border: 2px solid rgb(182, 41, 182);
   border-radius: 20px;
-  padding: 8px;
-  box-shadow: 9px 5px 4px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: rgb(209, 224, 206);
 }
 
 b {
@@ -47,6 +57,56 @@ b {
 }
 
 .img {
-  width: 170px;
-  height: 90px;
+  width: 60%;
+  height: 5rem;
+}
+
+@media screen and (min-width: 969px) {
+  .alter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+    flex-wrap: wrap;
+  }
+  .container {
+    width: 25rem;
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .alter {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 20px;
+  }
+
+  .container {
+    width: 90%;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .alter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
 }
